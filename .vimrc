@@ -33,7 +33,7 @@ set smarttab
 set smartindent
 "colors ir_black
 if has("gui_running")
-	colors h80
+	colors ir_black
 else
 	colors ir_black
 endif
@@ -82,4 +82,5 @@ autocmd FileType java map <F7> :s@^@//<CR>/fjlfjldkdkdk<CR>
 autocmd FileType java map <F8> :s@^//@@<CR>/JFldjflkicjvkj<CR>
 autocmd FileType tex map <F7> :s@^@%<CR>/fjlfjldkdkdk<CR>
 autocmd FileType tex map <F8> :s@^%@@<CR>/fjlfjldkdkdk<CR>
+autocmd FileType tex colors h80
 "map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
