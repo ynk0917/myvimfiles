@@ -13,10 +13,10 @@ set cindent
 set t_Co=256
 syntax on
 set ai
-set sw=4
+set sw=8
 set ruler
-set softtabstop=4
-set tabstop=4
+set softtabstop=8
+set tabstop=8
 
 "set foldmethod=indent
 
@@ -31,12 +31,7 @@ set termencoding=utf-8
 set fileencoding=utf-8
 set smarttab
 set smartindent
-"colors ir_black
-if has("gui_running")
-	colors ir_black
-else
-	colors ir_black
-endif
+colors ir_black
 
 setl omnifunc=nullcomplete#Complete
 autocmd FileType * setl omnifunc=nullcomplete#Complete
@@ -84,3 +79,7 @@ autocmd FileType tex map <F7> :s@^@%<CR>/fjlfjldkdkdk<CR>
 autocmd FileType tex map <F8> :s@^%@@<CR>/fjlfjldkdkdk<CR>
 autocmd FileType tex colors h80
 "map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+if has("gui_running")
+	set gfn=Bitstream\ Vera\ Sans\ mono\ 11
+endif
+set autochdir

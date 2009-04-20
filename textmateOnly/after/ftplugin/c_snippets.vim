@@ -44,7 +44,7 @@ exec "Snippet namespace namespace ".st.":substitute(expand('%'),'.','\\l&', 'g')
 exec "Snippet map std::map<".st."key".et.", ".st."value".et."> map".st.et.";<CR>".st.et.""
 exec "Snippet mark #if 0<CR><CR>".st.":D('#pragma mark -<CR><CR>'}#pragma mark ".st.et."<CR><CR>#endif<CR><CR>".st.et.""
 exec "Snippet if if(".st.et.")<CR>{<CR>".st.et."<CR>}<CR>".st.et.""
-exec "Snippet main int main (int argc, char const* argv[])<CR>{<CR>".st.et."<CR>return 0;<CR}<CR>".st.et.""
+exec "Snippet main int main (int argc, char const* argv[])<CR>{<CR>".st.et."<CR>return 0;<CR>}<CR>".st.et.""
 exec "Snippet Inc #include <".st.":D('.h')".et."><CR>".st.et.""
 exec "Snippet inc #include \"".st.et.".h\""
 exec "Snippet for for( ".st.":D('unsigned int')".et." ".st."i".et." = ".st.":D('0')".et."; ".st."i".et." < ".st."count".et."; ".st."i".et." += ".st.":D('1')".et.")<CR>{<CR>".st.et."<CR>}<CR>".st.et.""

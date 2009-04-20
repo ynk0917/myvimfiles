@@ -23,7 +23,7 @@ hi ModeMsg	guifg=#404040		guibg=#C0C0C0
 hi MoreMsg	guifg=darkturquoise	guibg=#188F90
 hi NonText	guifg=#9FADC5		guibg=#334C75
 hi Question	guifg=#F4BB7E
-hi Search	guifg=white     		guibg=blue ctermfg=white ctermbg=blue
+hi Search	guifg=white     		guibg=blue ctermfg=white ctermbg=blue gui=bold,underline
 hi SpecialKey	guifg=#BF9261
 hi StatusLine	guifg=#c0ffff		guibg=#004443	gui=none
 hi StatusLineNC	guifg=#004443		guibg=#067C7B	gui=bold
