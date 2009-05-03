@@ -69,14 +69,14 @@ autocmd BufRead,BufNewFIle *.py map <F2> :%w !python<CR>
 autocmd BufRead,BufNewFIle *.rb map <F2> :%w !ruby<CR>
 autocmd BufRead,BufNewFIle *.java map <F2> :!ant<CR>
 map <F5> :NERDTreeToggle<CR>
-autocmd FileType python map <F7> :s/^/#<CR>/fjlsjfldddd<CR>
-autocmd FileType python map <F8> :s/^#//<CR>/fldjfla<CR>
-autocmd FileType cpp map <F7> :s@^@//<CR>/fjlfjldkdkdk<CR>
-autocmd FileType cpp map <F8> :s@^//@@<CR>/JFldjflkicjvkj<CR>
-autocmd FileType java map <F7> :s@^@//<CR>/fjlfjldkdkdk<CR>
-autocmd FileType java map <F8> :s@^//@@<CR>/JFldjflkicjvkj<CR>
-autocmd FileType tex map <F7> :s@^@%<CR>/fjlfjldkdkdk<CR>
-autocmd FileType tex map <F8> :s@^%@@<CR>/fjlfjldkdkdk<CR>
+autocmd FileType python map <F7> :s/^/#<CR>
+autocmd FileType python map <F8> :s/^#//<CR>
+autocmd FileType cpp map <F7> :s@^@//<CR>
+autocmd FileType cpp map <F8> :s@^//@@<CR>
+autocmd FileType java map <F7> :s@^@//<CR>
+autocmd FileType java map <F8> :s@^//@@<CR>
+autocmd FileType tex map <F7> :s@^@%<CR>
+autocmd FileType tex map <F8> :s@^%@@<CR>
 autocmd FileType tex colors h80
 "map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 if has("gui_running")
