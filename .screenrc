@@ -1,5 +1,7 @@
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
-hardstatus alwayslastline "%{R}[ %{w}%1` %{R}]%=%{M}%e %{G}%H %{Y} %c %{R} %d/%m/%Y %{K} Load: %l %{w}"
-termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
-term $TERM # depend on $TERM
+termcapinfo xterm 'hs:ts=\E]0;:fs=\007:ds=\E]0;bash\007'
+#caption always "%{= bk} %{= bY} [%n]%t @ %H %{-} %= %{= bR} %l %{-} | %{= KG} %Y-%m-%d %{-} "
+shelltitle '$ |bash'
+defhstatus "\005t"
+hardstatus alwayslastline "%{= bg}%-Lw%{= bw}%n%f %t%{-}%+Lw %=| %{= bw} %0c:%s "
+#hardstatus alwayslastline "%{= bk}%n%f %{= bY} %t%{-}%+Lw  @ %H %{-} %= %{= bR} %l %{-} | %{= KG} %0c:%s %{-} "
+hardstatus on
