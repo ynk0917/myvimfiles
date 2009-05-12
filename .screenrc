@@ -1,0 +1,5 @@
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
+hardstatus alwayslastline "%{R}[ %{w}%1` %{R}]%=%{M}%e %{G}%H %{Y} %c %{R} %d/%m/%Y %{K} Load: %l %{w}"
+termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+term $TERM # depend on $TERM
