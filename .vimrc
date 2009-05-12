@@ -83,3 +83,8 @@ if has("gui_running")
 	set gfn=Bitstream\ Vera\ Sans\ mono\ 11
 endif
 set autochdir
+let python_highlight_all = 1
+nmap <C-T>c :tabnew<CR>
+nmap <C-T>k :tabclose<CR>
+nmap <C-H> :tabprev<CR>
+nmap <C-L> :tabnext<CR>
