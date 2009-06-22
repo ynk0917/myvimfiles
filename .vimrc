@@ -64,11 +64,16 @@ filetype plugin on
 
 set tags+=~/.vim/stl.tags
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-map <F2> :make<CR>
-autocmd BufRead,BufNewFIle *.py map <F2> :%w !python<CR>
-autocmd BufRead,BufNewFIle *.rb map <F2> :%w !ruby<CR>
-autocmd BufRead,BufNewFIle *.java map <F2> :!ant<CR>
-map <F5> :NERDTreeToggle<CR>
+nmap <F2> :make<CR>
+"nmap <Tab> :bNext<CR>
+nmap <C-t> :tabe <CR>
+nmap <C-w> :tabclose <CR>
+nmap <Tab> gt
+nmap <S-Tab> gT
+autocmd BufRead,BufNewFIle *.py nmap <F2> :%w !python<CR>
+autocmd BufRead,BufNewFIle *.rb nmap <F2> :%w !ruby<CR>
+autocmd BufRead,BufNewFIle *.java nmap <F2> :!ant<CR>
+nmap <F5> :NERDTreeToggle<CR>
 autocmd FileType python map <F7> :s/^/#<CR>
 autocmd FileType python map <F8> :s/^#//<CR>
 autocmd FileType cpp map <F7> :s@^@//<CR>
@@ -83,8 +88,5 @@ if has("gui_running")
 	set gfn=Bitstream\ Vera\ Sans\ mono\ 11
 endif
 set autochdir
+set incsearch
 let python_highlight_all = 1
-nmap <C-T>c :tabnew<CR>
-nmap <C-T>k :tabclose<CR>
-nmap <C-H> :tabprev<CR>
-nmap <C-L> :tabnext<CR>
