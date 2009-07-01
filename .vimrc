@@ -66,7 +66,7 @@ set tags+=~/.vim/stl.tags
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 nmap <F2> :make<CR>
 "nmap <Tab> :bNext<CR>
-nmap <C-t> :tabe <CR>
+nmap <C-t> :tabe .<CR>
 nmap <C-w> :tabclose <CR>
 nmap <Tab> gt
 nmap <S-Tab> gT
@@ -90,3 +90,5 @@ endif
 set autochdir
 set incsearch
 let python_highlight_all = 1
+nmap j gj
+nmap k gk
