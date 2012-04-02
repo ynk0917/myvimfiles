@@ -98,3 +98,4 @@ nmap .. 3Go
 
 "autocmd BufWinLeave *.* silent mkview
 "autocmd BufWinEnter *.* silent loadview
+let g:EasyMotion_leader_key = ','
