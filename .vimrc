@@ -26,7 +26,7 @@ set smarttab
 "set smartindent
 "set ai
 "set cindent
-colors ir_black
+colors desert256
 
 setl omnifunc=nullcomplete#Complete
 autocmd FileType * setl omnifunc=nullcomplete#Complete
@@ -51,7 +51,6 @@ set runtimepath+=~/.vim/textmateOnly
 set runtimepath+=~/.vim/textmateOnly/after
 set nocp
 
-set tags+=~/.vim/stl.tags
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 nmap <F2> :make<CR>
 nmap <F3> :make clean<CR>
@@ -59,7 +58,9 @@ nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :set spell <CR>
 "nmap <Tab> :bNext<CR>
 nmap <C-t> :tabe .<CR>
-nmap <C-w> :tabclose <CR>
+nmap <C-c> :tabclose <CR>
+nmap <C-n> :cnext <CR>
+nmap <C-p> :cprevious <CR>
 nmap <Tab> gt
 nmap <S-Tab> gT
 autocmd BufRead,BufNewFIle *.py nmap <F2> :%w !python<CR>
@@ -69,6 +70,8 @@ autocmd FileType python map <F7> :s/^/#<CR>
 autocmd FileType python map <F8> :s/^#//<CR>
 autocmd FileType cpp map <F7> :s@^@//<CR>
 autocmd FileType cpp map <F8> :s@^//@@<CR>
+autocmd FileType cpp set tags+=~/.vim/stl.tags
+autocmd FileType h set tags+=~/.vim/stl.tags
 autocmd FileType java map <F7> :s@^@//<CR>
 autocmd FileType java map <F8> :s@^//@@<CR>
 autocmd FileType tex map <F7> :s@^@%<CR>
@@ -90,6 +93,8 @@ let python_highlight_all = 1
 nmap j gj
 nmap k gk
 nmap gf :tabedit <cfile><CR>
+set ic
+nmap .. 3Go
 
 "autocmd BufWinLeave *.* silent mkview
 "autocmd BufWinEnter *.* silent loadview
