@@ -100,3 +100,5 @@ nmap .. 3Go
 "autocmd BufWinEnter *.* silent loadview
 let g:EasyMotion_leader_key = ','
 nnoremap <Leader>ff :FufFile! <CR>
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
