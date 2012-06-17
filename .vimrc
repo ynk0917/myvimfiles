@@ -80,7 +80,11 @@ autocmd FileType tex colors h80
 "map <F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 if has("gui_running")
 	"set gfn=Bitstream\ Vera\ Sans\ mono\ 11
-	set gfn=Monaco\ 14
+    if has("win32")
+        set gfn=Monaco:h14
+    else
+        set gfn=Monaco\ 14
+    endif
 endif
 if has("win32")
 	source $VIMRUNTIME/delmenu.vim
