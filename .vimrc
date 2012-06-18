@@ -47,8 +47,6 @@ autocmd FileType xul set syntax=xml
 filetype on
 filetype indent on
 filetype plugin on
-set runtimepath+=~/.vim/textmateOnly
-set runtimepath+=~/.vim/textmateOnly/after
 set nocp
 
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
