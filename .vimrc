@@ -79,9 +79,9 @@ autocmd FileType tex colors h80
 if has("gui_running")
 	"set gfn=Bitstream\ Vera\ Sans\ mono\ 11
     if has("win32")
-        set gfn=Monaco:h14
+        set gfn=Inconsolata:h14
     else
-        set gfn=Monaco\ 14
+        set gfn=Inconsolata\ Medium\ 12
     endif
 endif
 if has("win32")
