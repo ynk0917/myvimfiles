@@ -81,7 +81,7 @@ if has("gui_running")
     if has("win32")
         set gfn=Inconsolata:h14
     else
-        set gfn=Inconsolata\ Medium\ 12
+        set gfn=Inconsolata\ Medium\ 14
     endif
 endif
 if has("win32")
