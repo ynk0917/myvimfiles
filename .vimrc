@@ -106,3 +106,11 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 set laststatus=2
 
+function PyHeader()
+    if getfsize(@%) <= 0
+        execute "norm i#!/usr/bin/env python# -*- coding: utf-8 -*-"
+    endif
+endfunction
+
+
+au BufRead,BufNewFile *.py call PyHeader()
