@@ -26,7 +26,7 @@ set smarttab
 "set smartindent
 "set ai
 "set cindent
-colors desert256
+colors wombat256
 
 setl omnifunc=nullcomplete#Complete
 autocmd FileType * setl omnifunc=nullcomplete#Complete
