@@ -1,0 +1,39 @@
+[user]
+	name = NienKun Yeh
+	email = ynk0917@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	log = auto
+    interactive = auto
+[core]
+	excludesfile = /home/akun/.gitignore
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	last = log -1 HEAD
+	unstage = reset HEAD --
+    sl = log  --color --pretty=format:'%C(yellow)%h %C(bold blue)%d%Creset - %Cred%ae %Cgreen%ar%Creset : %Creset%s'
+    gsl = log  --color --graph --pretty=format:'%C(yellow)%h %C(bold blue)%d%Creset - %Cred%ae %Cgreen%ar%Creset : %Creset%s'
+	stash-unapply = !git stash show -p | git apply -R
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1916x1057+0+19
+	main-window-view = HistoryView
+	file-view-hpane-position = 335
+	history-view-vpane-position = 662
+	file-view-vpane-position = 955
+[merge]
+	keepBackup = false
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+#[diff]
+    #external = p4diff

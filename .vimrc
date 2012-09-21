@@ -111,6 +111,12 @@ function PyHeader()
         execute "norm i#!/usr/bin/env python# -*- coding: utf-8 -*-"
     endif
 endfunction
+function BashHeader()
+    if getfsize(@%) <= 0
+        execute "norm i#!/bin/bash"
+    endif
+endfunction
 
 
 au BufRead,BufNewFile *.py call PyHeader()
+au BufRead,BufNewFile *.sh call BashHeader()
