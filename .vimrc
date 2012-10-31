@@ -80,8 +80,8 @@ if has("gui_running")
 	"set gfn=Bitstream\ Vera\ Sans\ mono\ 11
     if has("win32")
         set gfn=Inconsolata:h14
-    else
-        set gfn=Inconsolata\ Medium\ 14
+    elseif has("mac")
+        set gfn=Monaco:h14
     endif
 endif
 if has("win32")
