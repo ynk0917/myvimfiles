@@ -123,6 +123,9 @@ alias preprocess_setting="java -jar ~/mybin/Preprocess.jar"
 alias axml_parser="java -jar ~/mybin/AXMLPrinter2.jar"
 alias htc_ant="htc_ant_clean.sh && htc_ant.sh"
 alias xterm="xterm -tn xterm-256color -fa 'Monaco:pixelsize=18'"
+function goto_bin_directory() {
+    pushd `which $1 | xargs dirname`
+}
 
 
 # For colourful man pages (CLUG-Wiki style)
