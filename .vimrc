@@ -82,6 +82,8 @@ if has("gui_running")
         set gfn=Inconsolata:h14
     elseif has("mac")
         set gfn=Monaco:h14
+    else
+        set gfn=Monaco\ 14
     endif
 endif
 if has("win32")
