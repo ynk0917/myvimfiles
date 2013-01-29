@@ -166,3 +166,7 @@ function git_since_last_commit {
 }
 PS1="\[\033[30m\][\[\033[1;35m\]\u@\[\033[1;33m\]\W\[\033[30m\]]\[\033[0m\]\[\033[1;36m\]\$(git_branch)\[\033[0;33m\]\$(git_since_last_commit)\[\033[0m\] >"
 export TERM=xterm-256color
+
+if [ -e ~/.vim/bundle/android-completion/android ] ; then
+    source ~/.vim/bundle/android-completion/android
+fi
