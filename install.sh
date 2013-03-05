@@ -6,8 +6,11 @@ if [ -f ~/.vimrc ];then
     rm ~/.vimrc
 fi
 if [ -d ~/.vim ];then
+    rm -rf ~/.vim_bak
     mv ~/.vim ~/.vim_bak
-    rm ~/.vim
+elif [ -L ~/.vim ];then
+    rm ~/.vim_bak
+    mv ~/.vim ~/.vim_bak
 fi
 ln -s $current_directory ~/.vim
 ln -s $current_directory/.vimrc ~/.vimrc
