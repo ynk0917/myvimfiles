@@ -1,17 +1,12 @@
 #!/bin/sh
 
 current_directory=`pwd`
-if [ -f ~/.vimrc ];then
-    rm ~/.vimrc.bak
-    mv ~/.vimrc ~/.vimrc.bak
-fi
-if [ -d ~/.vim ];then
-    rm -rf ~/.vim_bak
-    mv ~/.vim ~/.vim_bak
-elif [ -L ~/.vim ];then
-    rm ~/.vim_bak
-    mv ~/.vim ~/.vim_bak
-fi
+cp ~/.vimrc ~/.vimrc_bak
+rm ~/.vimrc
+
+cp -r ~/.vim ~/.vim_bak
+rm -rf ~/.vim
+
 ln -s $current_directory ~/.vim
 ln -s $current_directory/.vimrc ~/.vimrc
 git pull origin master
