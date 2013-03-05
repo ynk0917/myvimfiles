@@ -2,8 +2,8 @@
 
 current_directory=`pwd`
 if [ -f ~/.vimrc ];then
+    rm ~/.vimrc.bak
     mv ~/.vimrc ~/.vimrc.bak
-    rm ~/.vimrc
 fi
 if [ -d ~/.vim ];then
     rm -rf ~/.vim_bak
