@@ -1,10 +1,8 @@
 #!/bin/sh
 
 current_directory=`pwd`
-cp ~/.vimrc ~/.vimrc_bak
 rm ~/.vimrc
 
-cp -r ~/.vim ~/.vim_bak
 rm -rf ~/.vim
 
 ln -s $current_directory ~/.vim
